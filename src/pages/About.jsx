@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaChild, FaLightbulb, FaGlobeAmericas, FaUsers } from 'react-icons/fa';
 

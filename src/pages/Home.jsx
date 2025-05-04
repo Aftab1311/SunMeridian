@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import HeroSection from '../components/HeroSection';
 import KidsPromoSection from '../components/KidsPromoSection';
 import Future from '../components/Future';
