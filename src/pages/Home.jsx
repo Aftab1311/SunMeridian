@@ -5,6 +5,10 @@ import Future from '../components/Future';
 import Empower from '../components/Empower';
 
 function Home() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
   return (
     <div className="w-full">
       <HeroSection/>

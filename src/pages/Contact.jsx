@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaPaperPlane } from 'react-icons/fa';
 
@@ -30,6 +30,10 @@ const Contact = () => {
       transition: { duration: 0.3 }
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-gradient-to-b from-[#F9F6F1] to-[#f0e9dd] min-h-screen py-12 px-4 sm:px-6 lg:px-8">
