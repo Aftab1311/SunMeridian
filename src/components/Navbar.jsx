@@ -86,7 +86,7 @@ function Navbar() {
           {/* Get Started Button - Desktop */}
           <div className="hidden  w-[200px] lg:flex justify-end">
             <Link 
-              to="/get-started"
+              to="/contact"
               className="border-2 border-black rounded-tr-3xl rounded-bl-3xl px-6 py-2 font-semibold hover:bg-black hover:text-white transition-all"
             >
               Get Started
