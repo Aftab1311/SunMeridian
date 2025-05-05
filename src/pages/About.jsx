@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaChild, FaLightbulb, FaGlobeAmericas, FaUsers } from 'react-icons/fa';
+import team from '../assets/team.jpg'; // Replace with your actual image path
 
 const About = () => {
   const sectionVariants = {
@@ -246,13 +247,30 @@ const About = () => {
         <p className="text-gray-700 mb-8">
           Our dedicated team of educators and staff are the heart of Sun Meridian. With diverse expertise and a shared passion for education, they create the nurturing environment that makes our school special.
         </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-8 rounded-full shadow-md transition-colors"
-        >
-          Meet Our Faculty
-        </motion.button>
+        <motion.div
+    whileHover={{ scale: 1.01 }}
+    transition={{ type: "spring", stiffness: 300 }}
+    className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-xl border-4 border-white"
+  >
+    {/* Team group photo - replace with your actual image */}
+    <img 
+      src={team}
+      alt="Sun Meridian faculty team group photo"
+      className="w-full h-full object-cover object-center"
+      loading="lazy"
+    />
+    
+    {/* Subtle overlay effect on hover */}
+    <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
+        className="bg-orange-600/90 text-white px-6 py-2 rounded-full font-medium shadow-lg"
+      >
+        Meet The Team
+      </motion.div>
+    </div>
+  </motion.div>
       </motion.section>
     </div>
   );

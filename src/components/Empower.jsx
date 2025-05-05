@@ -16,12 +16,15 @@ export default function Empower() {
         <p className="mt-4 text-base lg:text-lg text-gray-700">
           Encourage kids to think critically, be creative, and solve problems for a better future.
         </p>
+        <div className="w-full flex justify-center lg:justify-start">
         <button className="mt-6 px-6 py-3 bg-[#FF6A43] hover:bg-[#e85b37] text-white text-lg rounded-full flex items-center gap-2 shadow-md">
           Get Educated <ArrowUpRight size={20} />
         </button>
+        </div>
+       
 
         {/* Stats */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center gap-6">
+        <div className="w-full mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
           <div className="flex items-center bg-white rounded-2xl p-4 shadow w-full sm:w-60">
             <CheckCircle className="text-green-500 mr-3" size={30} />
             <div>

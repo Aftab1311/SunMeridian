@@ -7,21 +7,21 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-b from-[#f0e9dd] to-[#e0d4bc] text-gray-800 py-12 px-6">
-      <div className="w-full container mx-auto">
-        <div className="flex mb-12">
+    <footer className="bg-gradient-to-b from-[#f0e9dd] to-[#e0d4bc] text-gray-800 py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8 mb-8 md:mb-12">
           {/* Logo and description */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-4"
+            className="w-full lg:w-auto flex flex-col items-center lg:items-start text-center lg:text-left"
           >
-            <img src={logo} alt="Logo" className="w-32 h-32 object-contain" />
-            <h3 className="text-2xl font-bold text-[#5e210e]">Sun Meridian</h3>
-            <p className="text-sm">Igniting curiosity and creativity in children through innovative learning experiences.</p>
-            <div className="flex space-x-4">
+            <img src={logo} alt="Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+            <h3 className="text-xl md:text-2xl font-bold text-[#5e210e] mt-2">Sun Meridian</h3>
+            <p className="text-xs sm:text-sm max-w-xs mt-2">Igniting curiosity and creativity in children through innovative learning experiences.</p>
+            <div className="flex space-x-4 mt-4">
               {[FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube].map((Icon, index) => (
                 <motion.a
                   key={index}
@@ -29,78 +29,81 @@ function Footer() {
                   className="text-gray-600 hover:text-orange-600 transition-colors"
                   whileHover={{ y: -3, scale: 1.1 }}
                 >
-                  <Icon size={25} />
+                  <Icon size={20} className="w-5 h-5" />
                 </motion.a>
               ))}
             </div>
           </motion.div>
 
-          <div className='w-[65%] flex justify-between '>
-          {/* Quick Links */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-orange-600">Quick Links</h4>
-            <ul className="space-y-2">
-              {['About Us', 'Programs', 'Testimonials', 'Success Stories', 'FAQs'].map((item, index) => (
-                <motion.li 
-                  key={index}
-                  whileHover={{ x: 5 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  <a href="#" className="text-sm hover:text-orange-600 transition-colors">{item}</a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+          <div className='w-full lg:w-[65%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
+            {/* Quick Links */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-center sm:text-left"
+            >
+              <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-orange-600">Quick Links</h4>
+              <ul className="space-y-1 md:space-y-2">
+                {['About Us', 'Programs', 'Testimonials', 'Success Stories', 'FAQs'].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    whileHover={{ x: 5 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                  >
+                    <a href="#" className="text-xs sm:text-sm hover:text-orange-600 transition-colors">{item}</a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Programs */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-orange-600">Our Programs</h4>
-            <ul className="space-y-2">
-              {['STEM Learning', 'Creative Arts', 'Language Skills', 'Social Development', 'Summer Camp'].map((item, index) => (
-                <motion.li 
-                  key={index}
-                  whileHover={{ x: 5 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  <a href="#" className="text-sm hover:text-orange-600 transition-colors">{item}</a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+            {/* Programs */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center sm:text-left"
+            >
+              <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-orange-600">Our Programs</h4>
+              <ul className="space-y-1 md:space-y-2">
+                {['STEM Learning', 'Creative Arts', 'Language Skills', 'Social Development', 'Summer Camp'].map((item, index) => (
+                  <motion.li 
+                    key={index}
+                    whileHover={{ x: 5 }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                  >
+                    <a href="#" className="text-xs sm:text-sm hover:text-orange-600 transition-colors">{item}</a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
 
-          {/* Contact */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <h4 className="text-lg font-semibold mb-4 text-orange-600">Contact Us</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start space-x-2">
-                <span className="mt-1 text-orange-600">📍</span>
-                <span>123 Learning St, Education City, 10101</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="text-orange-600">📞</span>
-                <span>+1 (234) 567-8900</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <span className="text-orange-600">✉️</span>
-                <span>info@sunmeridian.com</span>
-              </li>
-            </ul>
-          </motion.div>
+            {/* Contact */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center sm:text-left"
+            >
+              <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-orange-600">Contact Us</h4>
+              <ul className="space-y-2 text-xs sm:text-sm">
+                <li className="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-2">
+                  <span className="text-orange-600">📍</span>
+                  <span>123 Learning St, Education City, 10101</span>
+                </li>
+                <li className="flex items-center justify-center sm:justify-start space-x-2">
+                  <span className="text-orange-600">📞</span>
+                  <span>+1 (234) 567-8900</span>
+                </li>
+                <li className="flex items-center justify-center sm:justify-start space-x-2">
+                  <span className="text-orange-600">✉️</span>
+                  <span>info@sunmeridian.com</span>
+                </li>
+              </ul>
+            </motion.div>
           </div>
         </div>
 
@@ -110,22 +113,22 @@ function Footer() {
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent my-8"
+          className="h-px bg-gradient-to-r from-transparent via-orange-400 to-transparent my-6 md:my-8"
         />
 
         {/* Bottom section */}
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-xs mb-4 md:mb-0"
+            className="text-xs text-center md:text-left"
           >
-            © {currentYear} Young Minds Learning Center. All rights reserved.
+            © {currentYear} Sun Meridian School. All rights reserved.
           </motion.p>
 
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((item, index) => (
               <motion.a
                 key={index}
@@ -142,34 +145,6 @@ function Footer() {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Floating decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
-        <motion.div
-          animate={{
-            x: [0, 100, 0],
-            rotate: [0, 180, 360]
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-          className="absolute bottom-4 left-1/4 w-8 h-8 rounded-full bg-orange-400 opacity-20"
-        />
-        <motion.div
-          animate={{
-            x: [0, -80, 0],
-            y: [0, -20, 0]
-          }}
-          transition={{
-            duration: 12,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-          className="absolute bottom-8 right-1/3 w-6 h-6 rounded-full bg-[#ff9900] opacity-20"
-        />
       </div>
     </footer>
   );
