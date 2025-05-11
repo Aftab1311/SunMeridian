@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaChild, FaLightbulb, FaGlobeAmericas, FaUsers } from 'react-icons/fa';
 import team from '../assets/team.jpg'; // Replace with your actual image path
+import school from '../assets/school.jpg'; // Replace with your actual image path
 
 const About = () => {
   const sectionVariants = {
@@ -112,7 +113,9 @@ const About = () => {
           >
             {/* Replace with actual image */}
             <div className="w-full h-full bg-gradient-to-r from-orange-100 to-yellow-100 flex items-center justify-center">
-              <span className="text-gray-500">School Campus Image</span>
+              <span className="text-gray-500">
+                <img src={school} alt="School Campus" className="w-full h-full object-cover" />
+              </span>
             </div>
           </motion.div>
         </div>

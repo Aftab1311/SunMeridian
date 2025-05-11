@@ -7,6 +7,9 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Activities from './pages/Activities'
+import Events from './pages/Events'
+import Notices from './pages/Notices'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +28,19 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path: 'activities',
+        element: <Activities />,
+      },
+      {
+        path: 'events',
+        element: <Events />,
+      },
+      {
+        path: 'notices',
+        element: <Notices />,
+      },  
+     
     ],
   },
 ])

@@ -102,9 +102,12 @@ const Contact = () => {
                     <FaMapMarkerAlt />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Our Address</h3>
+                    <h3 className="font-semibold text-gray-900 mb-2">Our Address</h3>
+                    <p className="text-gray-700 mb-1">
+                    <strong>Sigra Branch Address:</strong> A34, Madhopur, Indrapuri Colony, Chhittupura, Sigra, Varanasi, Uttar Pradesh 221010
+                    </p>
                     <p className="text-gray-700">
-                      123 Sun Street, Meridian City, 10101
+                    <strong>Chetganj Branch Address:</strong> C -6 / 188, Bagh Bariyar Singh, Vijay Nagar Colony, Chetganj, Varanasi, Uttar Pradesh 221001
                     </p>
                   </div>
                 </motion.div>
@@ -120,8 +123,9 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900">
                       Phone Number
                     </h3>
-                    <p className="text-gray-700">(123) 456-7890</p>
-                    <p className="text-gray-700">(098) 765-4321 (Admissions)</p>
+                    <p className="text-gray-700"> +91 9555855275 </p>
+                    <p className="text-gray-700"> +91 9454751752</p>
+                    <p className="text-gray-700"> +91 8005440751</p>
                   </div>
                 </motion.div>
 
@@ -136,8 +140,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900">
                       Email Address
                     </h3>
-                    <p className="text-gray-700">info@sunmeridian.com</p>
-                    <p className="text-gray-700">admissions@sunmeridian.com</p>
+                    <p className="text-gray-700">sunmeridianpublicschool@gmail.com</p>
                   </div>
                 </motion.div>
 
@@ -153,7 +156,7 @@ const Contact = () => {
                       Office Hours
                     </h3>
                     <p className="text-gray-700">
-                      Monday - Friday: 8:00 AM - 5:00 PM
+                      Monday - Friday: 8:00 AM - 4:00 PM
                     </p>
                     <p className="text-gray-700">Saturday: 9:00 AM - 1:00 PM</p>
                   </div>
