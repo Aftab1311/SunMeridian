@@ -7,8 +7,11 @@ import {
   FaClock,
   FaPaperPlane,
 } from "react-icons/fa";
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Contact = () => {
+  useScrollToTop();
+
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: {

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGraduationCap, FaChild, FaLightbulb, FaGlobeAmericas, FaUsers } from 'react-icons/fa';
 import team from '../assets/team.jpg'; // Replace with your actual image path
 import school from '../assets/school.jpg'; // Replace with your actual image path
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const About = () => {
   const sectionVariants = {
@@ -43,6 +44,8 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useScrollToTop();
 
   return (
     <div className="bg-gradient-to-b from-[#F9F6F1] to-[#f0e9dd] min-h-screen py-12 px-4 sm:px-6 lg:px-8">

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight, FaLightbulb, FaBookOpen, FaUserGraduate, FaSmile, FaChartLine, FaHeadset } from 'react-icons/fa';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import kid from "../assets/kid.png";
+import kid from "../assets/img5.jpg";
 import comp from "../assets/comp.png";
-import kid2 from "../assets/kid2.png";
+import kid2 from "../assets/img6.jpg";
 
 // Mock images - replace with your actual image paths
 const child1 = "https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80";
@@ -130,7 +130,7 @@ function HeroSection() {
       <motion.img 
         src={kid} 
         alt="Happy child learning" 
-        className='hidden md:block w-[200px] sm:w-[300px] md:w-[400px] lg:w-[490px] absolute top-1/2 -translate-y-1/2 -left-4 sm:-left-10 z-10'
+        className='hidden md:block w-[200px] sm:w-[300px] md:w-[400px] lg:w-[300px]  absolute top-1/2 -translate-y-1/2 left-10 rounded-3xl z-10'
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ 
@@ -148,7 +148,7 @@ function HeroSection() {
       <motion.img 
         src={kid2} 
         alt="Child with computer" 
-        className='hidden md:block w-[150px] sm:w-[250px] md:w-[350px] lg:w-[400px] absolute top-1/3 -translate-y-1/2 right-2 sm:right-4 z-10'
+        className='hidden md:block w-[150px] sm:w-[250px] md:w-[350px] lg:w-[300px] absolute top-1/3 -translate-y-1/2 right-12 rounded-3xl z-10'
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ 
@@ -287,9 +287,9 @@ function HeroSection() {
         </div>
 
         <motion.img 
-        src={kid} 
+        src={kid2} 
         alt="Happy child learning" 
-        className='md:hidden block mt-10'
+        className='md:hidden block w-[300px]  rounded-3xl mt-20'
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ 
