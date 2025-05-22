@@ -31,10 +31,10 @@ const KidsPromoSection = () => {
         <div className="absolute top-20 left-10 w-16 h-16 rounded-full bg-orange-300 animate-pulse"></div>
         <div className="absolute bottom-1/4 right-20 w-24 h-24 rounded-full bg-yellow-200 animate-pulse animation-delay-2000"></div>
       </div>
-      
+
       {/* Text section */}
       <div className="w-full px-4 md:px-10 lg:px-16 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between mb-16">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -54,7 +54,7 @@ const KidsPromoSection = () => {
             Our innovative approach helps children develop essential skills through engaging, age-appropriate activities.
           </p>
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -67,13 +67,21 @@ const KidsPromoSection = () => {
               Learn smartly with us. We teach <br className="hidden lg:block" />
               <span className="font-semibold text-[#BD6B2F]">'One Smart Lesson'</span> at a time!
             </p>
-            <motion.button 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-gradient-to-r from-[#f54a00] to-[#E38B4D] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all flex items-center justify-center"
+            <a
+              href="https://forms.gle/9Ch4NHEf82LUrkSH9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
             >
-              Enroll Now <FaArrowRight className="ml-2" />
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full bg-gradient-to-r from-[#f54a00] to-[#E38B4D] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all flex items-center justify-center"
+              >
+                Enroll Now <FaArrowRight className="ml-2" />
+              </motion.button>
+            </a>
+
           </div>
         </motion.div>
       </div>
@@ -150,7 +158,7 @@ const KidsPromoSection = () => {
       </div>
 
       {/* Floating decorative elements */}
-      <motion.div 
+      <motion.div
         animate={{
           y: [0, -15, 0],
         }}
@@ -161,7 +169,7 @@ const KidsPromoSection = () => {
         }}
         className="hidden lg:block absolute left-10 top-1/3 w-8 h-8 bg-[#BD6B2F]/20 rounded-full"
       />
-      <motion.div 
+      <motion.div
         animate={{
           y: [0, 15, 0],
         }}
