@@ -1,5 +1,5 @@
 import React from "react";
-import girlImg from "../assets/girlImg.png";
+import girlImg from "../assets/girlImg.jpeg";
 import { CheckCircle, ArrowUpRight } from "lucide-react";
 
 export default function Empower() {
@@ -45,7 +45,7 @@ export default function Empower() {
       {/* Right Content */}
       <div className="lg:w-1/2 flex justify-center relative mb-10 lg:mb-0">
         <div className="relative z-10">
-          <img src={girlImg} alt="happy girl" className="w-[400px] lg:w-[500px] rounded-xl" />
+          <img src={girlImg} alt="happy girl" className="w-[400px] h-[500px] lg:w-[500px] rounded-xl" />
         </div>
       </div>
     </section>
