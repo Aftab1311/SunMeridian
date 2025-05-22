@@ -14,7 +14,8 @@ const DirectorsMessage = () => {
           <div className=" flex flex-col items-center justify-center border-2 border-gray-200 rounded-lg p-4">
             <img src={directorImg} alt="Director" className="w-64 h-72 object-cover rounded-lg border-4 border-gray-200 shadow-md" />
             <div className="text-center mt-4">
-              <div className="text-xl font-bold text-pink-700">Mrs. L. G. Uma Maheswari <br /> <span className="font-normal text-black">Double Post Graduation, BSc, MSc, MA, B.Ed, PhD</span></div>
+              <div className="text-xl font-bold text-pink-700">Mrs Rati Srivastava
+                Director <br /> <span className="font-normal text-black">Double Post Graduation, BSc, MSc, MA, B.Ed, PhD</span></div>
               <div className="text-base font-semibold text-gray-700 mt-1">Director – Academics</div>
             </div>
           </div>
