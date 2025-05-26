@@ -1,8 +1,8 @@
 import React from "react";
-import letter from "../assets/letter.png";
-import knowledge from "../assets/knowledge.png";
-import geography from "../assets/geography.png";
-import arts from "../assets/arts.png";
+import letter from "../assets/img1.jpg";
+import knowledge from "../assets/img2.jpg";
+import geography from "../assets/img3.jpg";
+import arts from "../assets/img6.jpg";
 
 const subjects = [
   {

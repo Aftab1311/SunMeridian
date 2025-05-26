@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaChild, FaLightbulb, FaFeatherAlt } from "react-icons/fa";
 import lifeSkillsImg from "../assets/skill.jpg";
-import imaginationImg from "../assets/imagine.jpg";
-import growthImg from "../assets/grow.jpg";
+import imaginationImg from "../assets/imagination.jpeg";
+import growthImg from "../assets/grow.jpeg";
+import life from "../assets/img3.jpg"
 // Mock images - replace with your actual high-quality images
 
 
@@ -104,7 +105,7 @@ const KidsPromoSection = () => {
             <p className="opacity-90 mb-6">Essential skills for everyday success and confidence building.</p>
           </div>
           <img
-            src={lifeSkillsImg}
+            src={life}
             alt="Children learning life skills"
             className="w-full h-auto object-contain rounded-lg z-10 border-4 border-white/20"
           />

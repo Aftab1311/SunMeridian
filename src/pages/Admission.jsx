@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import useScrollToTop from '../hooks/useScrollToTop';
-
+import {FaArrowRight} from 'react-icons/fa';
+import qr from '../assets/qr.jpeg';
 const Admission = () => {
   useScrollToTop();
   const admissionSteps = [
@@ -90,6 +91,13 @@ const Admission = () => {
                 Students must meet the age requirements for their respective grade levels as per educational board guidelines.
               </p>
             </div>
+            <div>
+              <h3 className="font-semibold mb-2">Admission Fee</h3>
+              <p className="text-gray-600">
+                Admission fee is Rs.(100+500)
+              </p>
+              <img src={qr} className='w-[300px]  object-cover' />
+            </div>
           </div>
         </motion.div>
 
@@ -100,10 +108,12 @@ const Admission = () => {
           className="mt-8 text-center"
         >
           <a
-            href="/admission-guidelines"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            href="https://forms.gle/9Ch4NHEf82LUrkSH9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[30%] text-center px-2 py-2 sm:px-8 sm:py-3 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 text-sm sm:text-base"
           >
-            View Admission Guidelines
+            Enroll Now <FaArrowRight className="text-sm" />
           </a>
         </motion.div>
       </div>

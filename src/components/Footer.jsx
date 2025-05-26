@@ -96,7 +96,7 @@ function Footer() {
                 </li>
                 <li className="flex items-center justify-center sm:justify-start space-x-2">
                   <span className="text-orange-600">📞</span>
-                  <span>+1 (234) 567-8900</span>
+                  <span>9555855275</span>
                 </li>
                 <li className="flex items-center justify-center sm:justify-start space-x-2">
                   <span className="text-orange-600">✉️</span>

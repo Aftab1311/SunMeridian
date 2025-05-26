@@ -16,7 +16,7 @@ const DirectorsMessage = () => {
             <div className="text-center mt-4">
               <div className="text-xl font-bold text-pink-700">Mrs Rati Srivastava
                 Director <br /> <span className="font-normal text-black">Double Post Graduation, BSc, MSc, MA, B.Ed, PhD</span></div>
-              <div className="text-base font-semibold text-gray-700 mt-1">Director – Academics</div>
+              <div className="text-base font-semibold text-gray-700 mt-1">Director(Principal)</div>
             </div>
           </div>
           <div className="flex-1 text-gray-800 text-lg leading-relaxed">

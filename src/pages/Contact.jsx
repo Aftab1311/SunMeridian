@@ -110,7 +110,7 @@ const Contact = () => {
                     <strong>Sigra Branch Address:</strong> A34, Madhopur, Indrapuri Colony, Chhittupura, Sigra, Varanasi, Uttar Pradesh 221010
                     </p>
                     <p className="text-gray-700">
-                    <strong>Chetganj Branch Address:</strong> C -6 / 188, Bagh Bariyar Singh, Vijay Nagar Colony, Chetganj, Varanasi, Uttar Pradesh 221001
+                    <strong>Chetganj Branch Address:</strong> C -6 / 188, Bagh Bariyar Singh, Chetganj, Varanasi, Uttar Pradesh 221001
                     </p>
                   </div>
                 </motion.div>
