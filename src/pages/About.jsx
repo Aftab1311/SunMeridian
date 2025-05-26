@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGraduationCap, FaChild, FaLightbulb, FaGlobeAmericas, FaUsers } from 'react-icons/fa';
 import team from '../assets/team.jpg'; // Replace with your actual image path
 import school from '../assets/school.jpg'; // Replace with your actual image path
+import chetganj from '../assets/chetganj.jpeg';
 import useScrollToTop from '../hooks/useScrollToTop';
 
 const About = () => {
@@ -24,7 +25,7 @@ const About = () => {
 
   const fadeIn = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
       transition: {
         duration: 0.8,
@@ -50,20 +51,20 @@ const About = () => {
   return (
     <div className="bg-gradient-to-b from-[#F9F6F1] to-[#f0e9dd] min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
-      <motion.div 
+      <motion.div
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.5 }}
         variants={sectionVariants}
         className="max-w-7xl mx-auto text-center mb-16"
       >
-        <motion.span 
+        <motion.span
           className="inline-block px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-4 shadow-sm"
           whileHover={{ scale: 1.05 }}
         >
           Our Story
         </motion.span>
-        <motion.h1 
+        <motion.h1
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -71,7 +72,7 @@ const About = () => {
         >
           About <span className="text-orange-600">Sun Meridian School</span>
         </motion.h1>
-        <motion.p 
+        <motion.p
           className="text-lg text-gray-700 max-w-3xl mx-auto"
           variants={item}
         >
@@ -80,7 +81,7 @@ const About = () => {
       </motion.div>
 
       {/* Our Story */}
-      <motion.section 
+      <motion.section
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.2 }}
@@ -98,11 +99,10 @@ const About = () => {
               Our <span className="text-orange-600">Journey</span>
             </h2>
             <p className="text-gray-700 mb-4">
-              Founded in 2005, Sun Meridian School began as a small learning center with a big vision - to transform education through innovative teaching methods and a child-centric approach.
+              Founded in 2023, Sun Meridian School began as a small learning center with a big vision - to transform education through innovative teaching methods and a child-centric approach.
             </p>
             <p className="text-gray-700 mb-4">
-              What started with just 50 students has now grown into a premier educational institution serving over 2,000 bright young minds each year.
-            </p>
+              We started with just 7 students and now we are growing fastly due to our very concern team and 100%dedication towards student holistic development</p>
             <p className="text-gray-700">
               Our journey has been guided by our core belief that every child deserves an education that sparks curiosity, fosters creativity, and prepares them for the challenges of tomorrow.
             </p>
@@ -115,32 +115,44 @@ const About = () => {
             className="bg-gray-100 rounded-xl overflow-hidden h-80"
           >
             {/* Replace with actual image */}
-            <div className="w-full h-full bg-gradient-to-r from-orange-100 to-yellow-100 flex items-center justify-center">
-              <span className="text-gray-500">
-                <img src={school} alt="School Campus" className="w-full h-full object-cover" />
-              </span>
+            <div className="w-full h-full bg-gradient-to-r from-orange-100 to-yellow-100 flex">
+              <div className="w-1/2 h-full">
+                <img
+                  src={school}
+                  alt="School Campus"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-1/2 h-full">
+                <img
+                  src={chetganj}
+                  alt="School Campus"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
+
           </motion.div>
         </div>
       </motion.section>
 
       {/* Mission & Vision */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
         className="max-w-7xl mx-auto mb-16"
       >
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold text-center text-gray-900 mb-12"
           variants={item}
         >
           Our <span className="text-orange-600">Core</span>
         </motion.h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
-          <motion.div 
+          <motion.div
             variants={item}
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
             whileHover={{ y: -5 }}
@@ -153,8 +165,8 @@ const About = () => {
               To provide a transformative educational experience that empowers students to become compassionate leaders, critical thinkers, and lifelong learners in an ever-changing global society.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             variants={item}
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
             whileHover={{ y: -5 }}
@@ -171,20 +183,20 @@ const About = () => {
       </motion.section>
 
       {/* Values */}
-      <motion.section 
+      <motion.section
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
         className="max-w-7xl mx-auto mb-16"
       >
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold text-center text-gray-900 mb-12"
           variants={item}
         >
           Our <span className="text-orange-600">Values</span>
         </motion.h2>
-        
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { icon: <FaChild className="text-orange-600 text-3xl" />, title: "Child-Centered", desc: "We put children at the heart of everything we do" },
@@ -207,7 +219,7 @@ const About = () => {
       </motion.section>
 
       {/* Achievements */}
-      <motion.section 
+      <motion.section
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.2 }}
@@ -240,7 +252,7 @@ const About = () => {
       </motion.section>
 
       {/* Team CTA */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -254,29 +266,29 @@ const About = () => {
           Our dedicated team of educators and staff are the heart of Sun Meridian. With diverse expertise and a shared passion for education, they create the nurturing environment that makes our school special.
         </p>
         <motion.div
-    whileHover={{ scale: 1.01 }}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-xl border-4 border-white"
-  >
-    {/* Team group photo - replace with your actual image */}
-    <img 
-      src={team}
-      alt="Sun Meridian faculty team group photo"
-      className="w-full h-full object-cover object-center"
-      loading="lazy"
-    />
-    
-    {/* Subtle overlay effect on hover */}
-    <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
-        className="bg-orange-600/90 text-white px-6 py-2 rounded-full font-medium shadow-lg"
-      >
-        Meet The Team
-      </motion.div>
-    </div>
-  </motion.div>
+          whileHover={{ scale: 1.01 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-xl border-4 border-white"
+        >
+          {/* Team group photo - replace with your actual image */}
+          <img
+            src={team}
+            alt="Sun Meridian faculty team group photo"
+            className="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+
+          {/* Subtle overlay effect on hover */}
+          <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: 1 }}
+              className="bg-orange-600/90 text-white px-6 py-2 rounded-full font-medium shadow-lg"
+            >
+              Meet The Team
+            </motion.div>
+          </div>
+        </motion.div>
       </motion.section>
     </div>
   );
