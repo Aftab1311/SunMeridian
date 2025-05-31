@@ -1,15 +1,16 @@
 import React from 'react';
-
+import yoga from "../assets/yoga.jpeg"
+import craft from "../assets/craft.jpeg"
 function Activities() {
   const activities = [
     {
       id: 1,
-      title: "Art & Craft",
+      title: "Yoga",
       description: "Express your creativity through various art forms and craft techniques.",
       schedule: "Every Monday & Wednesday",
       time: "3:00 PM - 5:00 PM",
       ageGroup: "5-12 years",
-      image: "https://placehold.co/400x300" // Replace with actual image
+      image:yoga // Replace with actual image
     },
     {
       id: 2,
@@ -18,7 +19,7 @@ function Activities() {
       schedule: "Every Tuesday & Thursday",
       time: "4:00 PM - 6:00 PM",
       ageGroup: "6-14 years",
-      image: "https://placehold.co/400x300" // Replace with actual image
+      image: craft // Replace with actual image
     },
     // Add more activities as needed
   ];
@@ -37,7 +38,7 @@ function Activities() {
               <img 
                 src={activity.image} 
                 alt={activity.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-150 object-cover"
               />
               <div className="p-6">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">{activity.title}</h2>
