@@ -200,7 +200,7 @@ function HeroSection() {
               <path d="M0,5 Q50,10 100,5 T200,5" stroke="#F97316" strokeWidth="3" fill="none" />
             </motion.svg>
           </span><br className="hidden sm:block" />
-          (Meridian of excellence)
+          Meridian of excellence
         </motion.h1>
 
         {/* Subtext with animation */}

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import useScrollToTop from "../hooks/useScrollToTop";
-import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
-import img3 from "../assets/img3.jpg";
-import img4 from "../assets/img4.jpg";
-import img5 from "../assets/img5.jpg";
-import img6 from "../assets/img6.jpg";
+import img1 from "../assets/gall1.jpeg";
+import img2 from "../assets/gall2.jpeg";
+import img3 from "../assets/gall3.jpeg";
+import img4 from "../assets/gall4.jpeg";
+import img5 from "../assets/gall5.jpeg";
+import img6 from "../assets/gall6.jpeg";
 import img7 from "../assets/img7.jpg";
 import img8 from "../assets/img8.jpg";
 import img9 from "../assets/img9.jpg";

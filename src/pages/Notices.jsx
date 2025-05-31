@@ -16,6 +16,13 @@ function Notices() {
       content: "The center will be closed on March 25th for the holiday.",
       category: "Holiday"
     },
+    {
+      id: 3,
+      title: "Summer Vacation",
+      date: "March 10, 2024",
+      content: "School will reopen on 25 June 2025.",
+      category: "Holiday"
+    },
     // Add more notices as needed
   ];
 

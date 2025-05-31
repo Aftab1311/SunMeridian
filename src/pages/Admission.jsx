@@ -94,7 +94,8 @@ const Admission = () => {
             <div>
               <h3 className="font-semibold mb-2">Admission Fee</h3>
               <p className="text-gray-600">
-                Admission fee is Rs.(100+500)
+                Form Fee is 250<br/>
+                Registration Amount is Rs.750
               </p>
               <img src={qr} className='w-[300px]  object-cover' />
             </div>

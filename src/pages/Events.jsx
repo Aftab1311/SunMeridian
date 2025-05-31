@@ -20,6 +20,25 @@ function Events() {
       description: "Showcasing the amazing work of our talented students and instructors.",
       category: "Exhibition"
     },
+     {
+      id: 3,
+      title: "Summer camp",
+      date: "May 15, 2025",
+      time: "11:00 AM - 4:00 PM",
+      location: "Exhibition Center",
+      description: "Showcasing the amazing work of our talented students and instructors.",
+      category: "Exhibition"
+    },
+    {
+      id: 4,
+      title: "Sports (indoor and outdoor competition)",
+      date: "June 5, 2025",
+      time: "11:00 AM - 4:00 PM",
+      location: "Exhibition Center",
+      description: "Showcasing the amazing work of our talented students and instructors.",
+      category: "Exhibition"
+    },
+    
     // Add more events as needed
   ];
 
