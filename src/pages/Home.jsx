@@ -4,7 +4,7 @@ import KidsPromoSection from '../components/KidsPromoSection';
 import Future from '../components/Future';
 import Empower from '../components/Empower';
 import useScrollToTop from '../hooks/useScrollToTop';
-
+import Whatsapp from '../components/Whatsapp';
 function Home() {
    useEffect(() => {
       window.scrollTo(0, 0);
@@ -18,7 +18,9 @@ function Home() {
       <KidsPromoSection/>
       <Future/>
       <Empower/>
+      <Whatsapp/>
     </div>
+    
   );
 }
 

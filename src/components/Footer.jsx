@@ -11,7 +11,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-8 mb-8 md:mb-12">
           {/* Logo and description */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -37,7 +37,7 @@ function Footer() {
 
           <div className='w-full lg:w-[65%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {/* Quick Links */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -47,7 +47,7 @@ function Footer() {
               <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-orange-600">Quick Links</h4>
               <ul className="space-y-1 md:space-y-2">
                 {['About Us', 'Programs', 'Testimonials', 'Success Stories', 'FAQs'].map((item, index) => (
-                  <motion.li 
+                  <motion.li
                     key={index}
                     whileHover={{ x: 5 }}
                     transition={{ type: 'spring', stiffness: 300 }}
@@ -59,7 +59,7 @@ function Footer() {
             </motion.div>
 
             {/* Programs */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -69,7 +69,7 @@ function Footer() {
               <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4 text-orange-600">Our Programs</h4>
               <ul className="space-y-1 md:space-y-2">
                 {['STEM Learning', 'Creative Arts', 'Language Skills', 'Social Development', 'Summer Camp'].map((item, index) => (
-                  <motion.li 
+                  <motion.li
                     key={index}
                     whileHover={{ x: 5 }}
                     transition={{ type: 'spring', stiffness: 300 }}
@@ -81,7 +81,7 @@ function Footer() {
             </motion.div>
 
             {/* Contact */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -92,7 +92,10 @@ function Footer() {
               <ul className="space-y-2 text-xs sm:text-sm">
                 <li className="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-2">
                   <span className="text-orange-600">📍</span>
-                  <span>123 Learning St, Education City, 10101</span>
+                  <span>Our Address
+                    Sigra Branch Address: A34, Madhopur, Indrapuri Colony, Chhittupura, Sigra, Varanasi, Uttar Pradesh 221010
+
+                    Chetganj Branch Address: C -6 / 188, Bagh Bariyar Singh, Chetganj, Varanasi, Uttar Pradesh 221001</span>
                 </li>
                 <li className="flex items-center justify-center sm:justify-start space-x-2">
                   <span className="text-orange-600">📞</span>
@@ -108,7 +111,7 @@ function Footer() {
         </div>
 
         {/* Divider */}
-        <motion.div 
+        <motion.div
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.8 }}

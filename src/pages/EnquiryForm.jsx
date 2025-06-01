@@ -158,7 +158,7 @@ const EnquiryForm = () => {
           className="mt-8 text-center text-gray-600"
         >
           <p>For urgent queries, please call our admission office:</p>
-          <p className="font-semibold mt-2">+1 (555) 123-4567</p>
+          <p className="font-semibold mt-2">91 95558 55275</p>
         </motion.div>
       </motion.div>
     </div>
